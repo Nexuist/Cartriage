@@ -2,6 +2,8 @@
 
 Cartriage is a portmanteau of "cartridge" and "triage." It was originally developed for my school's IT department to monitor cartridge levels and other properties of every printer in the building.
 
+#### [View a demo  report!](http://htmlpreview.github.io/?https://github.com/Nexuist/Cartriage/blob/master/example.html)
+
 ### Operation
 
 Cartriage takes a text file (containing 1 IP address per line) and queries every host in it using SNMP (Simple Networking Management Protocol). In particular, Cartriage collects the following properties:
@@ -31,7 +33,7 @@ Cartriage takes a text file (containing 1 IP address per line) and queries every
 	* A supply can have a type of "filled" (ex. waste toner) or "consumed" (ex. fuser).
 	* The measurement unit used to describe the supply is set by the printer and can range from "hours" to "sheets" to "lines." See [SupplyUnit in printerAndPrinterAccessories.py](https://github.com/Nexuist/Cartriage/blob/master/src/printerAndPrinterAccessories.py#L22-L38) for more.
 
-The results are then dumped into an HTML file and prettified for human consumption. An example report is available [here](http://htmlpreview.github.io/?https://github.com/Nexuist/Cartriage/blob/master/example.html).
+The results are then dumped into an HTML file and prettified for human consumption. An link to an example page is available in the introduction.
 
 > **NOTE:** Your results may vary. Most of these values are reported by the printer. Therefore, it's entirely possible that some of them will make no sense. It's all up to the manufacturer.
 
