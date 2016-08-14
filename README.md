@@ -45,15 +45,17 @@ The results are then dumped into an HTML file and prettified for human consumpti
 
 ### Arguments
 
-> python main.py input output [-v]
+> python [-h] [-v] printers output
 
-* `input` - Text file containing printer IP addresses, one for each line.
+* `printers` - Text file containing printer IP addresses, one for each line.
 	* ex. "printers.txt"
 
 * `output` - Filename for resulting HTML page.
 	* ex. "report.html"
 
 * `-v` - Optional, enables verbose reporting through STDOUT.
+
+* `-h` - Display help message.
 
 ### License
 
