@@ -6,7 +6,7 @@ Cartriage is a portmanteau of "cartridge" and "triage." It was originally develo
 
 Cartriage takes a text file (containing 1 IP address per line) and queries every host in it using SNMP (Simple Networking Management Protocol). In particular, Cartriage collects the following properties:
 
-* Host Up
+* Is Host Up
 
 * Description - Reported by the printer.
 	* ex. "RICOH MP C4503 1.24 / RICOH Network Printer C model / RICOH Network Scanner C model / RICOH Network Facsimile C model"
