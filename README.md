@@ -6,7 +6,7 @@ Cartriage is a portmanteau of "cartridge" and "triage." It was originally develo
 
 Cartriage takes a text file (containing 1 IP address per line) and queries every host in it using SNMP (Simple Networking Management Protocol). In particular, Cartriage collects the following properties:
 
-* Is Host Up
+* Host Online - Whether the printer could be reached or not.
 
 * Description - Reported by the printer.
 	* ex. `RICOH MP C4503 1.24 / RICOH Network Printer C model / RICOH Network Scanner C model / RICOH Network Facsimile C model`
@@ -16,7 +16,7 @@ Cartriage takes a text file (containing 1 IP address per line) and queries every
 
 * Serial Number
 
-* Uptime
+* Uptime - Amount of time since the printer was last restarted.
 	* ex. `8 week(s) 4 day(s)`
 
 * Life Count - Number of pages the printer has printed since it was activated.
@@ -27,7 +27,7 @@ Cartriage takes a text file (containing 1 IP address per line) and queries every
 
 * Supplies - Includes toner, staples, photo drums, fusers, etc.
 	* ex. `Black Toner - 60.0% - 60 / 100 sheets - Type: consumed`
-	* A printer can contain multiple supplies
+	* A printer can (and usually does) contain multiple supplies.
 	* A supply can have a type of "filled" (ex. waste toner) or "consumed" (ex. fuser).
 	* The measurement unit used to describe the supply is set by the printer and can range from "hours" to "sheets" to "lines." See [SupplyUnit in printerAndPrinterAccessories.py](https://github.com/Nexuist/Cartriage/blob/master/src/printerAndPrinterAccessories.py#L22-L38) for more.
 
