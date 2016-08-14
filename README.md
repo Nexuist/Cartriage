@@ -17,7 +17,7 @@ Cartriage takes a text file (containing 1 IP address per line) and queries every
 * Serial Number
 
 * Uptime
-	* ex. `8 week(s) 4 day(s)``
+	* ex. `8 week(s) 4 day(s)`
 
 * Life Count - Number of pages the printer has printed since it was activated.
 	* ex. `17463`
@@ -29,7 +29,7 @@ Cartriage takes a text file (containing 1 IP address per line) and queries every
 	* ex. `Black Toner - 60.0% - 60 / 100 sheets - Type: consumed`
 	* A printer can contain multiple supplies
 	* A supply can have a type of "filled" (ex. waste toner) or "consumed" (ex. fuser).
-	* The measurement unit used to describe the supply is set by the printer and can range from "hours" to "sheets" to "lines." See `SupplyUnit` in `printerAndPrinterAccessories.py` for more.
+	* The measurement unit used to describe the supply is set by the printer and can range from "hours" to "sheets" to "lines." See [SupplyUnit in printerAndPrinterAccessories.py](https://github.com/Nexuist/Cartriage/blob/master/src/printerAndPrinterAccessories.py#L22-L38) for more.
 
 The results are then dumped into an HTML file and prettified for human consumption. An example report is available [here](http://htmlpreview.github.io/?https://github.com/Nexuist/Cartriage/blob/master/example.html).
 
